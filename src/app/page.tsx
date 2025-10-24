@@ -219,34 +219,33 @@ export default function OneClickMovie() {
       {/* Social Media Section */}
       <section className="relative py-16 px-6 md:px-12 lg:px-24 bg-zinc-900">
         <div className="max-w-4xl mx-auto text-center">
-
-          <div className="flex justify-center gap-8">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 md:gap-8">
             <a
               href="https://www.instagram.com/oneklickfilm/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-3 text-white hover:text-blood transition-colors duration-300"
+              className="group flex items-center justify-center gap-2 sm:gap-3 text-white hover:text-blood transition-colors duration-300 px-4 py-3 rounded-lg hover:bg-zinc-800/50"
             >
-              <Instagram className="h-8 w-8 group-hover:scale-110 transition-transform duration-300" />
-              <span className="text-lg font-semibold">Instagram</span>
+              <Instagram className="h-6 w-6 sm:h-8 sm:w-8 group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-sm sm:text-lg font-semibold">Instagram</span>
             </a>
             <a
               href="https://www.youtube.com/watch?v=Ora171NYauI"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-3 text-white hover:text-blood transition-colors duration-300"
+              className="group flex items-center justify-center gap-2 sm:gap-3 text-white hover:text-blood transition-colors duration-300 px-4 py-3 rounded-lg hover:bg-zinc-800/50"
             >
-              <Youtube className="h-8 w-8 group-hover:scale-110 transition-transform duration-300" />
-              <span className="text-lg font-semibold">YouTube</span>
+              <Youtube className="h-6 w-6 sm:h-8 sm:w-8 group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-sm sm:text-lg font-semibold">YouTube</span>
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61582805934472"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-3 text-white hover:text-blood transition-colors duration-300"
+              className="group flex items-center justify-center gap-2 sm:gap-3 text-white hover:text-blood transition-colors duration-300 px-4 py-3 rounded-lg hover:bg-zinc-800/50"
             >
-              <Facebook className="h-8 w-8 group-hover:scale-110 transition-transform duration-300" />
-              <span className="text-lg font-semibold">Facebook</span>
+              <Facebook className="h-6 w-6 sm:h-8 sm:w-8 group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-sm sm:text-lg font-semibold">Facebook</span>
             </a>
           </div>
         </div>
