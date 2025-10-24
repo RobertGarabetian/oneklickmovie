@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, Play, ChevronDown } from "lucide-react";
+import { Menu, Play, ChevronDown, Instagram, Youtube, Facebook } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -89,17 +89,17 @@ export default function OneClickMovie() {
             className={`text-2xl md:text-3xl font-bold mt-4 tracking-widest transition-opacity duration-1000 ${showContent ? "opacity-100" : "opacity-0"
               }`}
           >
-            COMING SOON
+            NOVEMBER 16, 2025 6PM PST
           </p>
         </div>
 
         {/* Scroll Indicator */}
-        <div
+        {/* <div
           className={`absolute bottom-12 left-1/2 -translate-x-1/2 transition-opacity duration-1000 ${showContent ? "opacity-100" : "opacity-0"
             }`}
         >
           <ChevronDown className="h-12 w-12 animate-bounce text-blood" />
-        </div>
+        </div> */}
       </section>
 
       {/* About Section */}
@@ -109,28 +109,29 @@ export default function OneClickMovie() {
             <div>
               <Link href="/about">
                 <h2 className="text-5xl md:text-6xl font-black mb-6 text-blood hover:text-blood/80 transition-colors cursor-pointer">
-                  THE TERROR BEGINS
+                  YOUR TIMER BEGINS... NOW
                 </h2>
               </Link>
-              {/* <p className="text-xl text-gray-300 leading-relaxed mb-6">
-                In a world where technology controls everything, One Klick can
-                unleash unspeakable horror. When a group of friends stumbles
-                upon a mysterious website, they trigger a chain of events that
-                will test their survival instincts.
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed mb-3 md:mb-4">
+                An epic day of off-roading and scenic hiking turns to horror
+                when three friends are attacked by an unseen foe. The motivation
+                of the killer is unknown to the victims, but he is part of the
+                most dangerous game of all… hunting humans.
               </p>
-              <p className="text-xl text-gray-300 leading-relaxed mb-6">
-                Every click brings them closer to the truth... and closer to
-                their doom.
-              </p> */}
-              <Link href="/about">
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed mb-3 md:mb-4">
+                One by one, the predator aims to take out his prey before his
+                time runs out. The friends must use their wits in order to
+                survive the hunter as he moves in for the kill.
+              </p>
+              {/* <Link href="/about">
                 <Button className="bg-blood hover:bg-blood/90 text-white font-bold">
                   Read Full Synopsis
                 </Button>
-              </Link>
+              </Link> */}
             </div>
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-2xl">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Stills%202-kWuTS2ymHOMxAu3avJi2RQUToCfWRl.jpg"
+                src="./Stills2(1).jpg"
                 alt="Horror scene"
                 fill
                 className="object-cover"
@@ -144,12 +145,12 @@ export default function OneClickMovie() {
       <section className="relative py-24 px-6 md:px-12 lg:px-24 bg-zinc-950">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-black mb-12 text-center text-blood">
-            WITNESS THE HORROR
+            WITNESS THE SPECTACLE
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Stills%2017-a9jBMy2bBZuYpXcw99NdaLBMw8lRpE.jpg"
+                src="./Stills17(1).jpg"
                 alt="Movie still 1"
                 fill
                 className="object-cover"
@@ -175,13 +176,89 @@ export default function OneClickMovie() {
         </div>
       </section>
 
+      {/* Cast & Crew Section */}
+      <section className="relative py-24 px-6 md:px-12 lg:px-24">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-5xl md:text-6xl font-black mb-12 text-center text-blood">
+            CAST & CREW
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-zinc-800">
+              <h3 className="text-2xl md:text-3xl font-bold text-blood mb-6">
+                CREATIVE TEAM
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-lg font-bold text-blood mb-2">DIRECTED BY</h4>
+                  <p className="text-gray-300 text-lg">James Deveney</p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-blood mb-2">PRODUCED BY</h4>
+                  <p className="text-gray-300 text-lg">Sara Beko</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-zinc-800">
+              <h3 className="text-2xl md:text-3xl font-bold text-blood mb-6">
+                CAST
+              </h3>
+              <div className="space-y-3">
+                <p className="text-gray-300 text-lg">Jewelianna Ramos-Ortiz</p>
+                <p className="text-gray-300 text-lg">Vinny Balbo</p>
+                <p className="text-gray-300 text-lg">Nathan Kayn</p>
+                <p className="text-gray-300 text-lg">Justin Ortiz</p>
+                <p className="text-gray-300 text-lg">Bobby C. King</p>
+                <p className="text-gray-300 text-lg">Zinnett Hendrix</p>
+                <p className="text-gray-300 text-lg">Léa Cochet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media Section */}
+      <section className="relative py-16 px-6 md:px-12 lg:px-24 bg-zinc-900">
+        <div className="max-w-4xl mx-auto text-center">
+
+          <div className="flex justify-center gap-8">
+            <a
+              href="https://www.instagram.com/oneklickfilm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 text-white hover:text-blood transition-colors duration-300"
+            >
+              <Instagram className="h-8 w-8 group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-lg font-semibold">Instagram</span>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=Ora171NYauI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 text-white hover:text-blood transition-colors duration-300"
+            >
+              <Youtube className="h-8 w-8 group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-lg font-semibold">YouTube</span>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61582805934472"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3 text-white hover:text-blood transition-colors duration-300"
+            >
+              <Facebook className="h-8 w-8 group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-lg font-semibold">Facebook</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="relative py-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-6xl md:text-7xl font-black mb-8 text-blood">
             ARE YOU READY?
           </h2>
-          <p className="text-2xl text-gray-300 mb-12">Coming Soon</p>
+          <p className="text-2xl text-gray-300 mb-12">November 16, 2025 6PM PST</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link href="/trailer">
               <Button
@@ -229,12 +306,12 @@ export default function OneClickMovie() {
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               href="/about"
               className="block text-4xl font-bold text-white hover:text-blood transition-colors"
             >
               About
-            </Link>
+            </Link> */}
             <Link
               href="/trailer"
               className="block text-4xl font-bold text-white hover:text-blood transition-colors"

@@ -69,6 +69,10 @@ export default function AboutPage() {
                                             DIRECTED BY
                                         </h3>
                                         <p className="text-sm md:text-base text-gray-300">James Deveney</p>
+                                        <h3 className="text-base md:text-lg font-bold text-blood mb-2 md:mb-3 mt-4">
+                                            PRODUCED BY
+                                        </h3>
+                                        <p className="text-sm md:text-base text-gray-300">Sara Beko</p>
                                     </div>
                                     <div>
                                         <h3 className="text-base md:text-lg font-bold text-blood mb-2 md:mb-3">

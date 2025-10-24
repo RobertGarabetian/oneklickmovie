@@ -115,9 +115,8 @@ export default function TrailerPage() {
 
             {/* Custom Video Controls Overlay */}
             <div
-              className={`absolute inset-0 transition-opacity duration-300 ${
-                showControls || !isPlaying ? "opacity-100" : "opacity-0"
-              }`}
+              className={`absolute inset-0 transition-opacity duration-300 ${showControls || !isPlaying ? "opacity-100" : "opacity-0"
+                }`}
             >
               {/* Play/Pause Overlay */}
               {!isPlaying && (
@@ -187,12 +186,12 @@ export default function TrailerPage() {
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               href="/about"
               className="block text-4xl font-bold text-white hover:text-blood transition-colors"
             >
               About
-            </Link>
+            </Link> */}
             <Link
               href="/trailer"
               className="block text-4xl font-bold text-white hover:text-blood transition-colors"
