@@ -230,7 +230,7 @@ export default function OneClickMovie() {
               <span className="text-sm sm:text-lg font-semibold">Instagram</span>
             </a>
             <a
-              href="https://www.youtube.com/watch?v=Ora171NYauI"
+              href="https://www.youtube.com/watch?v=9oqv2_0ZH9I"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-2 sm:gap-3 text-white hover:text-blood transition-colors duration-300 px-4 py-3 rounded-lg hover:bg-zinc-800/50"

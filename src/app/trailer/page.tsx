@@ -1,44 +1,12 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, ArrowLeft, Play, Pause, Volume2, VolumeX } from "lucide-react";
-import Image from "next/image";
+import { Menu, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 export default function TrailerPage() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
-  const [showControls, setShowControls] = useState(true);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const togglePlay = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
-
-  const toggleMute = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
-    }
-  };
-
-  const handleVideoClick = () => {
-    if (isPlaying) {
-      setShowControls(true);
-      setTimeout(() => setShowControls(false), 3000);
-    } else {
-      togglePlay();
-    }
-  };
 
   return (
     <div className="h-screen w-screen overflow-hidden bg-black text-white">
@@ -58,14 +26,14 @@ export default function TrailerPage() {
           </button>
         </div>
         <div className="flex gap-4">
-          <Link href="/about">
+          {/* <Link href="/about">
             <Button
               variant="outline"
               className="bg-transparent border-white text-white hover:bg-white hover:text-black transition-all"
             >
               About
             </Button>
-          </Link>
+          </Link> */}
           {/* <Button className="bg-blood hover:bg-blood/90 text-white font-bold">
                         Get Tickets
                     </Button> */}
@@ -91,82 +59,30 @@ export default function TrailerPage() {
                     </div>
                 </div> */}
 
-        {/* Trailer Video Section */}
-        <div className="max-w-4xl mx-auto w-full">
-          <div
-            className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-zinc-900 cursor-pointer"
-            onMouseEnter={() => setShowControls(true)}
-            onMouseLeave={() => isPlaying && setShowControls(false)}
-          >
-            <video
-              ref={videoRef}
-              className="w-full h-full object-cover"
-              poster="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSC01488-Enhanced-NR-TynIsDoyHY2r5gjyZLzgiqET3efwka.jpg"
-              controls={false}
-              muted={isMuted}
-              onClick={handleVideoClick}
-              onPlay={() => setIsPlaying(true)}
-              onPause={() => setIsPlaying(false)}
-              onEnded={() => setIsPlaying(false)}
-            >
-              <source src="/ONEKLICK-Teaser.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-
-            {/* Custom Video Controls Overlay */}
-            <div
-              className={`absolute inset-0 transition-opacity duration-300 ${showControls || !isPlaying ? "opacity-100" : "opacity-0"
-                }`}
-            >
-              {/* Play/Pause Overlay */}
-              {!isPlaying && (
-                <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                  <button
-                    onClick={togglePlay}
-                    className="bg-blood/80 hover:bg-blood text-white rounded-full p-6 transition-all duration-300 hover:scale-110"
-                  >
-                    <Play className="h-16 w-16 ml-2" />
-                  </button>
-                </div>
-              )}
-
-              {/* Controls Bar */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                <div className="flex items-center justify-between">
-                  {/* Play/Pause Button */}
-                  <button
-                    onClick={togglePlay}
-                    className="bg-blood/80 hover:bg-blood text-white rounded-full p-3 transition-all duration-300 hover:scale-110"
-                  >
-                    {isPlaying ? (
-                      <Pause className="h-8 w-8" />
-                    ) : (
-                      <Play className="h-8 w-8 ml-1" />
-                    )}
-                  </button>
-
-                  {/* Volume Control */}
-                  <button
-                    onClick={toggleMute}
-                    className="bg-black/50 hover:bg-black/70 text-white rounded-full p-3 transition-all duration-300"
-                  >
-                    {isMuted ? (
-                      <VolumeX className="h-6 w-6" />
-                    ) : (
-                      <Volume2 className="h-6 w-6" />
-                    )}
-                  </button>
-                </div>
-              </div>
-            </div>
+        {/* YouTube Trailer Video Section */}
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl bg-zinc-900">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/9oqv2_0ZH9I?autoplay=0&rel=0&modestbranding=1&showinfo=0"
+              title="One Klick Official Trailer"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            ></iframe>
           </div>
 
           {/* Trailer Description */}
-          <div className="mt-8 text-center">
+          {/* <div className="mt-8 text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-blood">
               EXPERIENCE THE TERROR
             </h3>
-          </div>
+            <p className="text-gray-300 text-lg">
+              Watch the official trailer for One Klick - November 16, 2025
+            </p>
+          </div> */}
         </div>
       </div>
 
