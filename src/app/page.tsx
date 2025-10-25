@@ -189,12 +189,16 @@ export default function OneClickMovie() {
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="text-lg font-bold text-blood mb-2">DIRECTED BY</h4>
+                  <h4 className="text-lg font-bold text-blood mb-2">DIRECTOR</h4>
                   <p className="text-gray-300 text-lg">James Deveney</p>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-blood mb-2">PRODUCED BY</h4>
+                  <h4 className="text-lg font-bold text-blood mb-2">PRODUCER</h4>
                   <p className="text-gray-300 text-lg">Sara Beko</p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-blood mb-2">EXECUTIVE PRODUCER</h4>
+                  <p className="text-gray-300 text-lg">David Wallach</p>
                 </div>
               </div>
             </div>
