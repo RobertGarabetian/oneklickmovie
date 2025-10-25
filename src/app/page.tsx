@@ -94,12 +94,12 @@ export default function OneClickMovie() {
         </div>
 
         {/* Scroll Indicator */}
-        {/* <div
-          className={`absolute bottom-12 left-1/2 -translate-x-1/2 transition-opacity duration-1000 ${showContent ? "opacity-100" : "opacity-0"
+        <div
+          className={`absolute bottom-12 left-6/7 -translate-x-1/2 transition-opacity duration-1000 ${showContent ? "opacity-100" : "opacity-0"
             }`}
         >
           <ChevronDown className="h-12 w-12 animate-bounce text-blood" />
-        </div> */}
+        </div>
       </section>
 
       {/* About Section */}
