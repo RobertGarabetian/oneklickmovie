@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, Play, ChevronDown, Instagram, Youtube, Facebook } from "lucide-react";
+import { Menu, Play, ChevronDown, Instagram, Youtube, Facebook, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -247,6 +247,13 @@ export default function OneClickMovie() {
               <Facebook className="h-6 w-6 sm:h-8 sm:w-8 group-hover:scale-110 transition-transform duration-300" />
               <span className="text-sm sm:text-lg font-semibold">Facebook</span>
             </a>
+            <a
+              href="mailto:oneklickfilm@gmail.com"
+              className="group flex items-center justify-center gap-2 sm:gap-3 text-white hover:text-blood transition-colors duration-300 px-4 py-3 rounded-lg hover:bg-zinc-800/50"
+            >
+              <Mail className="h-6 w-6 sm:h-8 sm:w-8 group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-sm sm:text-lg font-semibold">Email</span>
+            </a>
           </div>
         </div>
       </section>
@@ -282,7 +289,7 @@ export default function OneClickMovie() {
       <footer className="border-t border-zinc-800 py-12 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto text-center text-gray-500">
           <p className="text-sm">
-            © 2025 One Klick. All rights reserved. | A Horror Experience
+            Property of Rage Productions
           </p>
         </div>
       </footer>
