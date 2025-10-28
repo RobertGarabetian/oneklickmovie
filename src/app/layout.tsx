@@ -13,7 +13,7 @@ const creepster = Creepster({
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "One Klick - A Horror Experience",
+  title: "One Klick",
   description:
     "One Klick can unleash unspeakable horror. Coming soon to theaters.",
   generator: "v0.app",
